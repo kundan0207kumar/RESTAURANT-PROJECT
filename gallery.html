@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar width:100%">
+            <ul>
+                
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/chef.html">chef</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/reservation.html">Reservation</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li class="login"><a href="/login.html">Login</a></li>
+                <li class="Signup"><a href="/signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <h2>Gallery</h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image1.avif" alt="Gallery Image 1" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image2.jpeg" alt="Gallery Image 2" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image3.jpg" alt="Gallery Image 3" onclick="openLightbox(this)">
+                </div>
+            </div>
+        </div></div>
+<br><br>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image4.jpg" alt="Gallery Image 4" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image5.jpg" alt="Gallery Image 5" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image6.jpg" alt="Gallery Image 6" onclick="openLightbox(this)">            
+                    </div>
+            </div>
+            </div></div><br><br>
+            <div class="container">
+                <div class="row">
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image7.jpeg" alt="Gallery Image 7" onclick="openLightbox(this)">          
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image8.jpg" alt="Gallery Image 8" onclick="openLightbox(this)">          
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <img src="restaurant image9.jpg" alt="Gallery Image 9" onclick="openLightbox(this)">          
+                    </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="upload-container">
+        <label for="file-upload" class="upload-button">Upload Image</label>
+        <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event)">
+        <div id="preview-container">
+            <img id="preview-img" src="" alt="Image Preview">
+        </div>
+    </div>
+    <footer style="background-color:grey; height: 388px; padding-top: 0px; font-size: 34px;" id="footer">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa fa-phone"><strong>phone no:</strong>+09523897967</i>
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-map-marker"><strong>Address:</strong>123 RCM building,sampatchak,patna </i>
+                    
+                </div>
+    
+                <div class="info-item">
+                    <i class="fa fa-envelope"><strong>Email:</strong>tastebihar@restaurant.com</i>
+                    
+                </div>
+            </div>
+            <p>&copy; 2025 Taste bihar Restaurant. All rights reserved.</p>
+        </div>
+        <!-- <p>&copy; 2025 Taste bihar Restaurant. All rights reserved.</p> -->
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
